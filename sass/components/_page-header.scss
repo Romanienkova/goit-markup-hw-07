@@ -1,0 +1,9 @@
+.header {
+   border-bottom: 1px solid #ececec;
+}
+
+.header .container {
+   @include line-up;
+
+   height: 79px;
+}

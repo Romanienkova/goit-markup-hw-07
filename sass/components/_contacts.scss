@@ -1,0 +1,36 @@
+.contacts {
+   display: flex;
+
+   gap: 30px;
+   margin-left: 318px;
+}
+
+.contacts__link {
+   @include line-up;
+
+   padding-top: 32px;
+   padding-bottom: 32px;
+
+   color: inherit;
+
+   letter-spacing: 0.02em;
+	@include fontWSL (500, null, 1.14);
+
+   transition: color $durationTiming;
+
+	&:hover,
+	&:focus {
+ 		color: $accentColor;
+	}
+}
+
+.contacts__icon {
+   margin-right: 10px;
+
+   fill: currentColor;
+
+	&:hover,
+	&:focus {
+   fill: $accentColor;
+	}
+}

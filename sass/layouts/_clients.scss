@@ -1,0 +1,38 @@
+.clients {
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+}
+
+.clients__link {
+	@include line-up;
+   justify-content: center;
+
+   width: 170px;
+   height: 92px;
+
+   border: 1px solid $iconsColor;
+   border-radius: 4px;
+
+   transition: border-color $durationTiming;
+
+		&:hover,
+		&:focus {
+			border-color: $accentColor;
+			outline: transparent;
+		}
+}
+
+
+
+.clients__icon {
+   fill: $iconsColor;
+
+   transition: fill $durationTiming;
+
+		.clients__link:hover &,
+		.clients__link:focus & {
+			fill: $accentColor;
+		}
+}
+

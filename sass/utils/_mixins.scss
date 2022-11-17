@@ -1,0 +1,10 @@
+@mixin line-up {
+	display: flex;
+   align-items: center;
+}
+
+@mixin fontWSL ($fw, $fspx, $lh) {
+	font-weight: $fw;
+	font-size: $fs;
+	line-height: $lh;
+}

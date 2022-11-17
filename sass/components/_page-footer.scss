@@ -1,0 +1,142 @@
+.footer {
+   padding-top: 60px;
+   padding-bottom: 60px;
+
+   background-color: #2f303a;
+}
+
+.footer .container {
+   display: flex;
+   gap: 93px;
+}
+
+.address {
+   margin-top: 20px;
+}
+
+.address__item  + .address__item {
+   margin-top: 9px;
+}
+
+.address__link {
+   color: rgba(255, 255, 255, 0.6);
+
+   line-height: 1.71;
+   font-style: normal;
+
+   transition: color $durationTiming;
+
+		&:hover,
+		&:focus {
+			color: $accentColor;
+		}
+}
+
+.address__item:first-child .link {
+   color: $primaryWhiteColor;
+
+   transition: color $durationTiming;
+
+		&:hover,
+		&:focus {
+			color: $accentColor;
+		}
+}
+
+
+
+.footer__block--title {
+	display: block;
+
+   margin-bottom: 20px;
+   margin-top: 12px;
+
+   color: $primaryWhiteColor;
+
+   text-transform: uppercase;
+   letter-spacing: 0.03em;
+	@include fontWSL(700, 14, 1.14);
+}
+
+.footer__block .social__link {
+   background-color: rgba(255, 255, 255, 0.1);
+
+   transition: background-color $durationTiming;
+
+		&:hover,
+		&:focus {
+			background-color: $accentColor;
+			outline: -1px solid $accentColor;
+		}
+}
+
+.footer__block .social__icon {
+   fill: $primaryWhiteColor;
+}
+
+.footer__block .social__list {
+   margin-top: 23px;
+}
+
+.form-block {
+   display: flex;
+}
+
+.form-block input {
+   margin-right: 12px;
+   padding: 15px 16px;
+
+   width: 358px;
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   border-radius: 4px;
+
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   background-color: var(--footer-bg-color);
+   color: rgba(255, 255, 255, 0.6);
+
+	@include fontWSL(null, 16, 1.25)
+
+	transition: border-color $durationTiming;
+
+		&:hover,
+		&:focus {
+			border-color: $accentColor;
+			outline: transparent;
+		}
+}
+
+.footer__button {
+   position: relative;
+
+   @include line-up;
+   justify-content: space-between;
+
+   padding: 10px 28px;
+
+   min-width: 200px;
+   min-height: 50px;
+   border-radius: 4px;
+
+   background-color: $accentColor;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   color: $primaryWhiteColor;
+
+   letter-spacing: 0.06em;
+	@include fontWSL(700, 16, 1.88)
+
+   transition: background-color $durationTiming;
+
+		&:hover,
+		&:focus {
+			background-color: #188ce8;
+		}
+}
+
+.footer__button--send-icon {
+   position: absolute;
+   top: 50%;
+   right: 28px;
+   transform: translateY(-50%);
+
+   fill: currentColor;
+}

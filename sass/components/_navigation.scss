@@ -1,0 +1,45 @@
+.site-nav {
+   display: flex;
+   gap: 50px;
+
+   margin-left: 93px;
+}
+
+.site-nav__link {
+		display: block;
+
+		padding-top: 32px;
+		padding-bottom: 31px;
+
+		color: $titleTextColor;
+
+		font-weight: 500;
+		line-height: 1.14;
+		letter-spacing: 0.02em;
+		@include fontWSL(500, null, 1.14);
+
+		transition: color $durationTiming;
+
+		&:hover,
+		&:focus {
+		color: $accentColor;
+		}
+}
+
+.current {
+   position: relative;
+   color: $accentColor;
+
+		&::after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		transform: translateY(1px);
+
+		content: '';
+		width: 100%;
+		height: 4px;
+		border-radius: 2px;
+		background-color: $accentColor;
+		}
+}
